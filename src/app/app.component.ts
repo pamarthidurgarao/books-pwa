@@ -28,13 +28,6 @@ export class AppComponent {
       search: ['', Validators.required],
     });
   }
-  login() {
-    this.oktaAuth.loginRedirect();
-  }
-  
-  logout() {
-    this.oktaAuth.logout('/');
-  }
 
   onSearch() {
     if (!this.searchForm.valid) return;
